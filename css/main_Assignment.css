@@ -79,3 +79,65 @@ body {
 .navbar a:visited {
     color: blue;
 }
+
+.contact {
+    width: 800px;
+    background: white;
+    padding: 50px;
+    margin: auto;
+}
+
+.contact-title {
+    width: 80%;
+    background: white;
+    margin: auto;
+
+}
+
+.contact-Email {
+    width: 80%;
+    background: white;
+    margin: auto;
+}
+
+.contact-name {
+    width: 80%;
+    background: white;
+    margin: auto;
+}
+
+.first {
+    width: 40%;
+    background: white;
+    /* margin: auto; */
+    float: left;
+}
+
+.last {
+    width: 50%;
+    background: white;
+    margin: auto;
+    float: left;
+}
+
+.contact-message {
+    width: 80%;
+    background: white;
+    margin: auto;
+}
+
+p {
+    margin: 5px;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+}
