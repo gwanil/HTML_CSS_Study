@@ -1,0 +1,37 @@
+.container {
+    width: 800px;
+}
+
+.left {
+    width: 80%;
+    height: 200px;
+    /* background-color: aqua; */
+    float: left;
+}
+
+.right {
+    width: 20%;
+    height: 200px;
+    /* background-color: brown; */
+    float: left;
+}
+
+.img1 {
+    width: 150px;
+    height: 150px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.img2 {
+    width: 30px;
+}
+
+.text {
+    font-size: 12px;
+    color: gray;
+}
