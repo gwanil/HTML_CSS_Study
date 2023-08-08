@@ -168,3 +168,8 @@ td,th {
 table {
     border-collapse: collapse;
 }
+
+.cart_background {
+    background-color: skyblue;
+    padding: 10px;
+}
