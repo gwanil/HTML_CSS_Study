@@ -1,37 +1,50 @@
 .container {
     width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.left {
+.blog-content {
     width: 80%;
     height: 200px;
-    /* background-color: aqua; */
+    /* background-color: #eee; */
     float: left;
 }
 
-.right {
+.blog-img {
     width: 20%;
     height: 200px;
-    /* background-color: brown; */
+    /* background-color: yellow; */
     float: left;
 }
 
 .img1 {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 150px;
     display: block; 
     margin-left: auto; 
     margin-right: auto;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: auto; */
     
 }
 
-.img2 {
-    width: 30px;
+.blog-profile {
+    width: 50px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+}
+
+.blog-name {
+    float: left;
 }
 
 .text {
     font-size: 12px;
-    color: gray;
+    color: darkgray;
+    margin: 5px;
 }
