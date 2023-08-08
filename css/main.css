@@ -20,5 +20,20 @@ strong {
 } */
 
 .content {
-    color:green;
+    text-align: center;
+}
+
+.box {
+    width: 500px;
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 40px;
+    border: 4px solid black;
+    border-radius: 15px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    font-size: 10px;
+    color: white;
+    box-shadow: 5px 5px gray;
 }
