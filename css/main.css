@@ -183,7 +183,7 @@ table {
 
 .cart-table {
     width: 100%;
-    max-width: 700px;
+    max-width: 100%;
     margin: auto;
     background-color: white;
     border-radius: 10px;
@@ -204,9 +204,48 @@ table {
 
 .blue-botton {
     padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: coral;
+    color: white;
     float: right;
+    cursor: pointer;
+}
+
+.blue-botton:hover {
+    background-color: chocolate;
+}
+
+.blue-botton:focus {
+    background-color: gray;
+}
+
+.blue-botton:active {
+    background-color: brown;
 }
 
 .cell-long {
     width: 400px;
+}
+
+.input-test {
+    font-size: 20px;
+
+}
+
+.input-test:focus {
+    border: 5px solid red;
+}
+
+.custom-link {
+    text-decoration: none;
+}
+
+.custom-link:link {
+    color: violet;
+}
+
+.custom-link:visited {
+    color: black;
 }
