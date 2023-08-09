@@ -1,9 +1,20 @@
+@font-face {
+    font-family: '이쁜폰트';
+    src: url(../font/NanumSquareR.woff);
+}
+
 div,input,textarea{
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
+    font-family: 'gulim';
+    /* font-weight: 900; */
+}
+
+p,h4,h3,h2,h1,span {
+    transform: rotate(0.03deg);
 }
 
 
@@ -121,7 +132,7 @@ strong {
     right: 0;
     margin: auto;
     width: 150px;
-
+    
     /* text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -275,4 +286,44 @@ table {
 
 .bg-blue {
     background-color: blue;
+}
+
+.flex-container{
+    display: flex;                  /* 가로 정렬 */
+    /* justify-content: center;
+    flex-wrap: wrap;
+    height: 500px;
+    align-items: center;
+    justify-content: center; */
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    background-color: gray; 
+    margin: 5px;
+}
+
+/* .logo-container {
+    background-color: coral;
+    display: flex;
+}
+
+.logo {
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    margin: 10px;
+} */
+
+.nav-container {
+    display: flex;
+    height: 40px;       /* 상하 간격 */
+    padding: 5px;
+    align-items: center;    /* 글씨 상하 가운데 */
+}
+
+.nav-item {
+    margin: 10px;
 }
