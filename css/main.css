@@ -347,3 +347,25 @@ table {
     }
 }
 
+.layout-container {
+    display: flex;  /* 가로정렬 */
+    padding: 5px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.layout-item {
+    margin: 100px;
+}
+
+/* @media screen and (max-width: 1200px) {
+    .layout-container{
+        flex-wrap: wrap;
+    }
+
+@media screen and (max-width: 768px) {
+    .layout-container{
+        flex-wrap: wrap;
+    } */
