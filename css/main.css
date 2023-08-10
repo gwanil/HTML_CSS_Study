@@ -76,7 +76,7 @@ strong {
     background: cornflowerblue;
     /* float: left; */
     display: inline-block;
-    vertical-align: top;
+    vertical-align: top;    /* 상하 정렬*/
 }
 
 .right {
@@ -127,7 +127,7 @@ strong {
     background: white;
     border: none;
     border-radius: 5px;
-    position: absolute;
+    position: absolute;     /* 좌표설정: 기준이 내 부모 (position: relative를 가지고 있는 부모 기준) */
     left: 0;
     right: 0;
     margin: auto;
@@ -152,7 +152,7 @@ strong {
     /* height: 150px; */
     background: #eee;
     text-align: center;
-    position: relative;
+    position: relative;     /* 좌표설정: 기준이 내 원래 위치 */
     top: -50px;
     margin: auto;
     padding: 20px;
@@ -289,12 +289,11 @@ table {
 }
 
 .flex-container{
-    display: flex;                  /* 가로 정렬 */
-    /* justify-content: center;
-    flex-wrap: wrap;
+    display: flex;                  /* 기본적으로 박스 가로 정렬 (float: left 대체) */
+    /* justify-content: center;      좌우정렬  */
+    /* flex-wrap: wrap;                 폭이 넘치는 요소 wrap 처리  */
     height: 500px;
-    align-items: center;
-    justify-content: center; */
+    /* align-items: center;             상하정렬 */
 }
 
 .flex-item {
@@ -325,8 +324,7 @@ table {
 }
 
 .nav-item {
-    margin: 10px;
-
+    margin: 10px;  
 }
 
 
@@ -339,7 +337,7 @@ table {
 .layout-item {
 
     width: 25%;
-    text-align: center;
+    text-align: centeAr;
 }
 
 
