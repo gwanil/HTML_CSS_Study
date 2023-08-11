@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link href="css/main.css" rel="stylesheet">
+    <!-- [if lt IE 9]>
+    <link href="css/ie.css" type="text/css" rel="stylesheet"/>
+    <![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+
 </head>
 <body>
-    
     <!-- <div class="flex-container">
         <div class="flex-item" style="flex-grow: 1;">1</div>
         <div class="flex-item" style="flex-grow: 2;">2</div>
@@ -18,13 +23,16 @@
         <div class="logo" style="flex-grow: 3;">Logo</div>
         <div class="logo">products</div>
         <div class="logo">services</div>
-    </div> -->-
+    </div> -->
     
     <nav class="nav-container">
         <div class="nav-item">ShooShop</div>
         <div style="flex-grow: 1;"></div>       <!-- flex-grow : 1 => 좌측 우측 동시 정렬 -->
         <div class="nav-item">Products</div>
         <div class="nav-item">Service</div>
+        
+        <div style="clear: both;"></div>
+
     </nav>
         
 
@@ -72,25 +80,48 @@
         <button type="submit">전송</button>
     </form>
 
+    <br/>
 
     <div class="layout-container">
         <div class="layout-item">
+            <i class="fas fa-shopping-cart fa-3x" ></i>
             <h4>Fast shipping</h4>
             <p>lorem ipusm</p>
         </div>
         <div class="layout-item">
+            <i class="fas fa-globe-asia fa-3x"></i>
             <h4>Good Service</h4>
             <p>lorem ipusm</p>
         </div>
         <div class="layout-item">
+            <i class="fas fa-user fa-3x"></i>
             <h4>Free Coupons</h4>
             <p>lorem ipusm</p>
         </div>
-
         <div class="layout-item">
+            <i class="fas fa-tshirt fa-3x"></i>
             <h4>New Products</h4>
             <p>lorem ipusm</p>
         </div>
+    </div>
+
+
+    <div class="shop-bg">
+        <div class="shop-container">
+            <div class="shop-item">
+                <div style="position: relative">
+                <div class="overlay"></div>
+                <img src="image/product1-1.jpg">
+                </div>
+            </div>  
+            <div class="shop-item">
+                <img src="image/product2.jpg">
+            </div>
+            <div class="shop-item">
+                <img src="image/product3.jpg">
+            </div>
+        </div>
+
     </div>
 
 
