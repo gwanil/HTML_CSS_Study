@@ -380,15 +380,39 @@ table {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;     /* 색상 투명도 */
-    transition: all 1s;     /* 애니메이션 all 대신 opacity를 적어도되는데 귀찮으면 all */
+    /* overflow: hidden; */
+    transition: all 1s;    /* 애니메이션 all 대신 opacity를 적어도되는데 귀찮으면 all */
     /* transition-timing-function: cubic-bezier();     점점 빠르게 등 옵션 */
 }
 
-
-.overlay:hover {        /* 마우스를 올렸을 때  (hopa 기억) */
-    opacity: 1;
+.overlay-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
+.overlay-black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3) ;
+    margin-top: 100%;
+    transition: all 1s;
+    /* padding: 20px; */
+}
+
+.overlay-wrap:hover .overlay-black {
+    margin-top: 50%;
+}
+
+
+/* .overlay:hover {        마우스를 올렸을 때  (hopa 기억)
+    opacity: 1;
+} */
+
+.overlay-black span {
+    color: white;
+}
 
 @media screen and (max-width: 1200px) {
     .main-title {
