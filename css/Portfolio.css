@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.main-bg {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgb(66, 126, 223), rgb(158, 84, 179));
+    padding: 1px;       /* h4 입력시 위에 잘리는 배경 채우기 */
+}
+
+.main-title {
+    color: white;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.main-bg p {
+    color: white;
+    padding: 1px;
+    width: 40%;
+    margin-left: 50px;
+}
+
+.main-btn {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(53, 50, 50);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: auto;
+    margin-left: 50px;
+}
+
+.iphone {
+    /* display: block; */
+    width: 400px;
+    float: right;
+    margin-top: -140px;
+}
+
+.second-title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.mid-title {
+    background-color: mediumslateblue;
+    width: 100%;
+    margin-top: 30px;
+    padding: 50px;
+    display: flex;
+}
+
+
+.mid-item i {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: mediumpurple;
+    margin-top: 30px;
+}
+
+.mid-item {
+    margin: auto;
+    width: 10%;
+    text-align: center;
+}
+
+.bg-left {
+    float: left;
+    width: 50%;
+    height: 50%;
+    padding-left: 100px;
+
+}
+
+.bg-right {
+    float: right;
+    width: 50%;
+    height: 50%;
+}
+
+.bg-img {
+    float: left;
+    width: 100%;
+    padding-left: 100px;
+}
+
+.bg-img {
+    float: right;
+    width: 50%;
+    
+}
+
+.sns {
+    display: flex;
+    width: 100%;
+}
+
+.sns-item {
+    margin: 10px;
+}
+
+.sns-item i {
+    background-color: mediumpurple;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+}
