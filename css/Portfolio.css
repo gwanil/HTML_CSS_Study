@@ -11,13 +11,13 @@ h1 {
 }
 
 p {
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .main-bg {
-    height: 500px;
+    height: 550px;
     background-image: linear-gradient(to bottom, #499add, #4e61c0);
-    padding: 1px;       /* h4 입력시 위에 잘리는 배경 채우기 */
+    padding: 20px;       /* h4 입력시 위에 잘리는 배경 채우기 */
     color: white;
 }
 
@@ -38,21 +38,33 @@ p {
     margin-left: 50px;
 } */
 
-/* .main-btn {
-    width: 100px;
-    height: 40px;
-    background-color: rgb(53, 50, 50);
-    color: white;
+.btn {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: 'nanumsquare';
+    font-weight: 600;
     border: none;
     border-radius: 5px;
-    padding: auto;
-    margin-left: 50px;
-} */
+    cursor: pointer;
+}
+
+.btn-black {
+    background-color: #444;
+    color: white;
+}
+
+.btn-black:hover {
+    background-color: dimgrey;
+}
+
+.btn-black:active {
+    background-color: darkgrey;
+}
 
 .iphone {
     /* display: block; */
     width: 400px;
-    margin-top: 64px;
+    margin-top: 95px;
 }
 
 .main-text p {
@@ -65,30 +77,62 @@ p {
     padding-top: 30px;
 }
 
-.mid-title {
-    background-color: mediumslateblue;
+.second-title h2 {
+    margin-bottom: 0;
+}
+
+.second-title p {
+    margin-top: 0;
+}
+
+.service {
+    background-color: #4e61c0;
     width: 100%;
+    color: white;
+    text-align: center;
     margin-top: 30px;
-    padding: 50px;
+    padding: 50px 30px 50px 30px;
+}
+
+.service-container {
+    max-width: 1800px;
+    /* padding-left: 30px; */
+}
+
+.service-container p {
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+
+.service-container h4 {
+    margin-top: 0; 
+}
+
+.service-items {
     display: flex;
 }
 
-
-.mid-item i {
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    padding-top: 25px;
-    box-sizing: border-box;
-    color: mediumpurple;
-    margin-top: 30px;
+.service-items div {
+    width: 25%;
 }
 
-.mid-item {
-    margin: auto;
-    width: 10%;
-    text-align: center;
+.service h5 {
+    margin-bottom: 0;
+}
+
+.service-items p {
+    margin-top: 0;
+}
+
+.service-icon {
+    background-color: white;
+    color: #4e61c0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 25px;
+    box-sizing: border-box;
+    /* margin-top: 30px; */
 }
 
 .bg-left {
@@ -99,37 +143,90 @@ p {
 
 }
 
-.bg-right {
-    float: right;
-    width: 50%;
-    height: 50%;
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
 }
 
-.bg-img {
-    float: left;
-    width: 100%;
-    padding-left: 100px;
-}
-
-.bg-img {
-    float: right;
-    width: 50%;
+.portfolio-container {
+    text-align: left;
+    max-width: 1800px;
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
+.portfolio-item1 {
+    background-image: url(../image/portfolio-1.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 350px;
+}
+.portfolio-item2 {
+    background-image: url(../image/portfolio-2.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 350px;
+}
+.portfolio-item3 {
+    background-image: url(../image/portfolio-3.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 350px;
+}
+.portfolio-item4 {
+    background-image: url(../image/portfolio-4.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 350px;
+}
+
 .sns {
-    display: flex;
     width: 100%;
+    display: flex;
 }
 
 .sns-item {
-    margin: 10px;
+    width: 35%;
+    text-align: center;
 }
 
 .sns-item i {
-    background-color: mediumpurple;
-    padding: 10px;
+    background-color: #4e61c0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 8px;
     border: none;
-    border-radius: 100px;
     color: white;
+}
+
+
+@media screen and (max-width : 992px) {
+    .main-container{
+        flex-direction: column;
+    }
+    .iphone {
+        width: 150px;
+        display: block;
+        margin: auto;
+        margin-top: 75px;
+        bottom: 0px;
+    }
+    .main-text {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .service-container{
+        flex-wrap: wrap;
+    }
+    .service-items {
+        flex-direction: column;
+    }
+    .service-items div {
+        width: 100%;
+    }
 }
