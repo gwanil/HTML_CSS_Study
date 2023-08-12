@@ -1,0 +1,8 @@
+.custom {
+  color: aqua;
+}
+
+/* important 우선순위 점수 10000점 */
+/* .custom {
+  color: skyblue !important;
+} */
