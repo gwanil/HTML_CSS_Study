@@ -87,6 +87,29 @@
     <br />
 
     <input type="file" class="input-file" />
+    <input placeholder="안녕하세요" />
+    <input type="range" />
+    <progress value="0.5"></progress>
+
+    <!-- -webkit: 크롬, 사파리, 엣지에서만 적용되는 스타일, -moz: firefox -->
+    <style>
+      input[type='file']::-webkit-file-upload-button {
+        background-color: skyblue;
+        border: none;
+      }
+      input::-webkit-input-placeholder {
+        color: red;
+      }
+      input[type='range'] {
+        appearance: none; /* 브라우저 css 스타일 안보이게 */
+      }
+      input[type='range']::-webkit-slider-thumb {
+        appearance: none;
+        background-color: red;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
 
     <div class="layout-container">
       <div class="layout-item">
