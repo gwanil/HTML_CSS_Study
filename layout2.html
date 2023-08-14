@@ -109,6 +109,21 @@
         width: 50px;
         height: 50px;
       }
+      progress {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: white;
+        color: red;
+      }
+      progress::-webkit-progress-bar {
+        background-color: #eee;
+        border-radius: 2px;
+      }
+      progress::-webkit-progress-value {
+        background-color: red;
+        border: 2px;
+      }
     </style>
 
     <div class="layout-container">
