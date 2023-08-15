@@ -467,6 +467,36 @@ table {
   background-color: blue;
 }
 
+.ani-text {
+  /* transform: rotate(30deg); */
+  /* transform: translateX(100px); */
+  /* transform: scale(0.5); */
+  text-align: center;
+}
+
+.ani-text:hover {
+  animation-name: 왔다갔다;
+  animation-duration: 1s;
+}
+
+@keyframes 왔다갔다 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(-100px);
+  }
+
+  75% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .main-title {
     font-size: 30px;
