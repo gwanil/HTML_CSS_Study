@@ -498,18 +498,19 @@ table {
 }
 
 .ani-btn {
-  padding: 10px;
+  padding: 15px 20px;
+  font-size: 20px;
   background-color: skyblue;
   color: white;
   border: none;
   border-radius: 5px;
   display: block;
-  margin: auto;
+  margin: 30px auto;
 }
 
 .ani-btn:hover {
   animation-name: btn;
-  animation-duration: 1 s;
+  animation-duration: 1s;
 }
 
 @keyframes btn {
@@ -517,8 +518,16 @@ table {
     transform: rotate(0deg);
   }
 
+  25% {
+    transform: rotate(-8deg);
+  }
+
   50% {
-    transform: rotate(-50deg);
+    transform: rotate(8deg);
+  }
+
+  75% {
+    transform: rotate(-8deg);
   }
 
   100% {
@@ -527,22 +536,71 @@ table {
 }
 
 .ani-plus {
+  margin: auto;
   text-align: center;
+  font-size: 70px;
+  width: 84px;
+  cursor: pointer;
+  /* 마우스 갔다대면 손가락으로 바귐 */
 }
 
 .ani-plus:hover {
   animation-name: plus;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
+  /* 애니메이션 끝나면 그상태로 멈춤 */
 }
 
 @keyframes plus {
-  50% {
-    transform: rotate(-90deg);
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-15deg);
   }
 
   100% {
-    transform: rotate(0deg);
-    transform: scale(4);
+    transform: rotate(45deg) scale(1.5);
+  }
+}
+
+.ani-nav {
+  width: 200px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  /* 모든요소 맨 앞 */
+  position: fixed;
+  /* 앞으로 */
+  z-index: 5;
+  text-align: right;
+  transition: all 1s;
+  transform: translateX(-150px);
+}
+
+.ani-nav:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+
+.ani-nav:hover p {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-250px);
+  }
+
+  50% {
+    transform: translateX(20px) skew(-30deg);
+  }
+
+  100% {
+    transform: translateX(0px);
   }
 }
 
