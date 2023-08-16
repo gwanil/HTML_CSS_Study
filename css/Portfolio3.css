@@ -2,20 +2,6 @@ body {
   margin: 0;
 }
 
-.menu-nav {
-  width: 100%;
-  height: 50px;
-  background-color: white;
-}
-
-.menu-container {}
-
-.menu-text {
-  height: 30px;
-  width: 300px;
-  background-color: red;
-  border: 1px solid #eee;
-}
 
 .text-input {
   width: 225px;
@@ -25,7 +11,26 @@ body {
 
 .menu-btn {
   margin-right: 75%;
-  background-color: red;
+  background-color: rgb(58, 57, 57);
+  color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.board {
+  width: 80%;
+  max-width: 1500px;
+  height: auto;
+}
+
+.board-item {
+  background-color: white;
+  width: 500px;
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-left: 5px solid skyblue;
+  border-radius: 5px;
 }
 
 .ani-nav {
