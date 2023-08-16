@@ -91,6 +91,15 @@ body {
   padding-right: 10px;
 }
 
+/* .input-animation {
+  width: 150px;
+  transition: width 1s;
+}
+
+.input-animation:focus {
+  width: 500px;
+} */
+
 .ani-nav {
   background-color: slateblue;
   color: white;
