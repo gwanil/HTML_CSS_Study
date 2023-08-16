@@ -91,56 +91,65 @@ body {
   padding-right: 10px;
 }
 
-/* .input-animation {
+.nav-link {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+}
+
+.input-animation {
   width: 150px;
   transition: width 1s;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .input-animation:focus {
   width: 500px;
-} */
+}
 
-.ani-nav {
-  background-color: slateblue;
-  color: white;
-  width: 200px;
-  height: 100%;
+.content {
+  margin-left: 50px;
+}
+
+.sidebar {
+  transition: all 0.5s;
+  width: 150px;
+  height: 100vh;
+  background: #484bb3;
   position: fixed;
-  text-align: right;
   z-index: 5;
-  /* display: flex; */
-  transition: all 1s;
-  transform: translateX(-160px);
+  color: white;
+  font-family: 'nanumsquare';
+  /*  시작화면 */
+  transform: translateX(-100px);
 }
 
-.ani-text {
-  text-align: center;
+.sidebar div {
+  margin: 12px 0px 0px 15px;
 }
 
-.ani-nav:hover {
+.sidebar:hover {
   transform: translateX(0px);
-  text-align: left;
 }
 
-.ani-nav:hover p {
-  animation-name: slide;
-  animation-duration: 1s;
+.sidebar i {
+  transition: all 0.5s;
+  transform: translateX(100px);
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(-20px);
-  }
-
-  50% {
-    transform: translateX(20px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
+.sidebar:hover i {
+  transform: translateX(0px);
 }
 
+.input-button {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
 
 @media screen and (max-width:992px) {
   .board {
